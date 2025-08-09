@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uk"> <!--задаємо українську мову для сторінки lang="uk"-->
+<head>
+    <meta charset="UTF-8"> <!-- Щоб український текст і всі символи відображались правильно -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Щоб сайт добре виглядав на телефонах і планшетах -->
+    <title>Template 1</title> <!--заголовок, який буде відображатися у вкладці браузера-->
+
+    <!--підключення файликів які відповідають за стиль сторінки-->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/general_styles.css"> 
+
+    <!--Підключення шрифтів, із сайту google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!--НАВІГАЦІЙНА ПАНЕЛЬКА-->
+        <header>
+            <nav class="navbar container">
+                
+                <!--логотип-->
+                <div class="navbar-logo">
+                    <img src="images/shop-logo.svg" alt="Логотип Магазину" class="responsive-image">
+                </div>
+
+                <!--пункти меню-->
+                <div class="navbar-menu hidden menu-text">
+                    <a href="#section-1" class="navbar-menu-item navbar-menu-1">Головна</a>
+                    <a href="#section-2" class="navbar-menu-item">Про нас</a>
+                    <a href="#section-5" class="navbar-menu-item">Команда</a>
+                    <a href="#section-7" class="navbar-menu-item">FAQ</a>
+                </div>
+
+                <!--іконки відкривання та закривання меню, відображатиметься лише для малих екранів-->
+                <div class="navbar-icons">
+                    <img src="images/menu_icon.png" alt="menu" class="menu-icon">
+                    <img src="images/close_icon.png" alt="close" class="close-icon hide">
+                </div>
+
+            </nav>
+        </header>
+    
+        <!--ОСНОВНИЙ КОНТЕНТ САЙТУ-->
+        <main>
+
+            <!--СЕКЦІЯ 1 - БАНЕР-->
+            <div id="section-1" class="section-1">
+                <!--слоган, підслоган та кнопка (зображення встановлений як задній фон в стилях в класі section-1 у файлі index.css)-->
+                <div class="section-1-content container grid">
+                    <h1 class="slogan span-8-start-3">Відкрийте світ найкращих українських брендів.</h1>
+                    <p class="sub-slogan span-8-start-3">Ми зібрали на одній платформі провідні магазини одягу з усієї України, щоб заощадити ваш час та надихнути на нові образи. Наша мета — зробити процес вибору та покупки якісних українських речей максимально зручним та приємним.</p>
+                </div>
+                <button id="btn-1" class="custom-button">Зв’язатися</button>
+            </div>
+
+            <!--СЕКЦІЯ 2 - ПРО НАС-->
+            <div id="section-2" class="section-gap container">
+
+                <!--Заголовок та опис секції про нас-->
+                <div class="section-2-content grid">
+                    <h2 class="tittle span-8-start-3">Ми – компанія, що відбирає найкраще з української моди, щоб ви завжди носили топовий одяг </h2>
+                </div>
+
+                <!--4 картки, з прикладом товару або послуги яку надаємо-->
+                <div class="grid responsive-grid">
+
+                    <!--Картка №1-->
+                    <div class="card-section-2 span-3">
+                        <p class="label-text">H & M</p>
+                        <img src="images/hm-logo.png" alt="icon" class="responsive-image gaps-for-card">
+                        <p class="usual-text">Шведський ритейлер fast fashion, який пропонує модний та доступний одяг для всіх вікових груп із регулярними оновленнями колекцій.</p>
+                    </div>
+
+                    <!--Картка №2-->
+                    <div class="card-section-2 span-3">
+                        <p class="label-text">ZARA</p>
+                        <img src="images/zara-logo.png" alt="icon" class="responsive-image gaps-for-card">
+                        <p class="usual-text">Іспанський бренд fast fashion, що пропонує стильний і доступний одяг із регулярним оновленням колекцій для всієї родини.</p>
+                    </div>
+
+                    <!--Картка №3-->
+                    <div class="card-section-2 span-3">
+                        <p class="label-text">MANGO</p>
+                        <img src="images/mango-logo.png" alt="icon" class="responsive-image gaps-for-card">
+                        <p class="usual-text">Іспанський бренд, що вирізняється витонченими силуетами та елегантним дизайном для жінок і чоловіків.</p>
+                    </div>
+
+                    <!--Картка №4-->
+                    <div class="card-section-2 span-3">
+                        <p class="label-text">RESERVED</p>
+                        <img src="images/reserved-logo.png" alt="icon" class="responsive-image gaps-for-card">
+                        <p class="usual-text">Польський бренд із широким асортиментом сучасного одягу та аксесуарів за демократичними цінами.</p>
+                    </div>
+
+                </div>
+
+            </div>
+           
+            <!--СЕКЦІЯ 3 - Цінності (Мета та місія)-->
+            <div id="section-3" class="section-gap container">
+                
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">Наша мета та місія</h2>
+                </div>
+
+                <!--3 карточки про мету та місію-->
+                <div class="grid responsive-grid">
+
+                        <!--Картка №1-->
+                        <div class="card-section-3 span-4-start-3">
+                            <img src="images/logo-money.png" alt="image" class="responsive-image">
+                            <p class="label-text gap-20px gap-30px">Оренда</p>
+                            <p class="usual-text"> Заробіток та життя для нашого сайту, а також для нас. Усі магазини що є у нашому збірнику сплачують місце щоб бути тут.</p>
+                        </div>
+
+                        <!--Картка №2-->
+                        <div class="card-section-3 span-4-start-7">
+                            <img src="images/sale-logo.png" alt="image" class="responsive-image">
+                            <p class="label-text gap-20px gap-30px">Послуги</p>
+                            <p class="usual-text">Ніяких пошуків бо тут все! Топ магазини одягу Украйни! Зручність та користність понад усе!</p>
+                        </div>
+
+                    
+
+                </div>
+               
+            </div>
+
+            <!--СЕКЦІЯ 4 - Факти-->
+            <div id="section-4" class="section-4 section-gap">
+                <div class="container">
+
+                    <!--Заголовок-->
+                    <div class="grid">
+                        <h2 class="tittle span-6-start-4">Досягнення, факти, цифри</h2>
+                    </div>
+
+                    <!--картки - заголовки фактів-->
+                    <div class="grid responsive-grid">
+                        <!--карткка 1-->
+                        <div class="span-3">
+                            <p class="card-tittle-section-4 accent-text">4+</p>
+                            <p class="card-content-section-4 usual-text">Топ магазини з якими ми співпрацюємо</p>
+                        </div>
+                        <!--картка 2-->
+                        <div class="span-3">
+                            <p class="card-tittle-section-4 accent-text">2</p>
+                            <p class="card-content-section-4 usual-text">Два розробника сайту</p>
+                        </div>
+                        <!--картка 3-->
+                         <div class="span-3">
+                            <p class="card-tittle-section-4 accent-text">4000$</p>
+                            <p class="card-content-section-4 usual-text">За кожен магазин ми збираємо 500$ в місяць. Наш заробіток на цей час 4000$</p>
+                        </div>
+                        <!--картка 4-->
+                         <div class="span-3">
+                            <p class="card-tittle-section-4 accent-text">+ Емоції</p>
+                            <p class="card-content-section-4 usual-text">Наші покупці завжди доволені тим що є зручний пошук</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!--СЕКЦІЯ 5 - Команда-->
+            <div id="section-5" class="section-gap container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">Наша команда</h2>
+                </div>
+
+                <!--картки учасників команди-->
+                <div class="grid responsive-grid">
+
+                   <!--Картка 1-->
+                    <div class="card-section-5 span-3-start-4">
+                        <img src="images/shop-logo.svg" alt="image" class="responsive-image">
+                        <p class="label-text gap-30px">Король Артур</p>
+                        <p class="usual-text gap-16px">Front-end розробник</p>
+                    </div>
+
+                    <!--Картка 2-->
+                    <div class="card-section-5 span-3-start-7">
+                        <img src="images/shop-logo.svg" alt="image" class="responsive-image">
+                        <p class="label-text gap-30px">Загоровський Максим</p>
+                        <p class="usual-text gap-16px">Front-end розробник</p>
+                    </div>
+                       
+                </div>
+            </div>
+
+            <!--СЕКЦІЯ 6 - Зв'зок (залишити за'явку ітд.)-->
+            <div id="section-6" class="section-6 section-gap">
+                <div class="container grid reverse-section-6">
+
+                    <!--заголовок, текст, кнопка-->
+                    <div class="span-6-start-2 extra-box">
+                        <h2 class="tittle">Якщо вас зацікавило, заповніть анкету</h2>
+                        <p class="usual-text">Ми з нетепераінням чекаємо замолення. Наші колеги з вами дуже гарно поговорять та ви все зрозумієте. Також якщо ви вже не вперше на сайті, ви можете залтшити відгук</p>
+                        <div class="spacer"></div>
+                        <div class="buttons-container">
+                            <button id="btn-2" class="custom-button button-extra">Відгук</button>
+                            <button id="btn-3" class="custom-button button-extra">Зв’язатися</button>
+                        </div>
+                       
+                    </div>
+
+                    <!--зображення-->
+                    <div class="span-4-start-8 image-align section-6-image">
+                        <img src="images/tshirt-shop.png" alt="image" class="responsive-image" >
+                    </div>
+
+                </div>
+            </div>
+            
+            <!--СЕКЦІЯ 7 - FAQ-->
+            <div id="section-7" class="section-gap container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">FAQ Відповіді на поширені питання</h2>
+                </div>
+
+                <!--Блоки питання-відповіді-->
+               <div class="faq-section grid">
+
+                    <!--блок 1-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Цікаві факти про нас {Розробників}</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="arrow">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text"><strong>Артур</strong>, я люблю читати та займатися спортом, а також мрію створити в майбутньому IT Імперію. Цікавий факт -- моє прізвище “Король”
+<strong>Максим:</strong> Я люблю тестувати програми, мтворювати всяку айтішне і тд. Також в мене є свій прогрес в Айті що я вже працю на одну компаію, та активно займаюся спортом</p>
+                    </details>
+
+                    <!--блок 2-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Скільки коштувало створення цього сайту?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="arrow">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text">Цей продукт для <strong>500$</strong></p>
+                    </details>
+
+                    <!--блок 3-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Наші інші проекти</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <div class="arrow-padding image-align">
+                                <img class="arrow-icon responsive-image" src="images/arrow.svg" alt="arrow">
+                            </div>
+                        </summary>
+                        <p class="opened-content usual-text">Cooming soon.....</p>
+                    </details>
+
+                </div>
+            </div>
+
+        </main>
+        
+        <!--ФУТЕР ІЗ КОНТАКТНОЮ ІНФОЮ-->
+        <footer class="section-gap">
+            <div class="container">
+                <p class="usual-text gap-20px"><span class="usual-text-bold">tel:</span>+380 (63) 854 50 73</p>
+                <p class="usual-text gap-20px"><span class="usual-text-bold">e-mail:</span>deep_research@in.ua</p>
+                <p class="usual-text gap-20px"><span class="usual-text-bold">location:</span>Kyiv, Ukraine</p>
+            </div>
+            <div class="small-text container center-footer">
+                Big Fish Academy. All rights reserved ©
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+<!--додаємо скрипт-->
+<script src="main.js"></script>
+
+</html>
