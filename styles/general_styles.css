@@ -171,11 +171,14 @@ body, html{
 }
 
 @media (max-width: 1020px) { 
+    .navbar-logo, .navbar-icons{
+        z-index: 1000;
+    }
     .navbar-menu{
         z-index: 1;
-        background-color: var(--color-grey-dark);
+        background-color: var(--color-blue-dark);
         position: absolute;
-        top: 7vh;
+        top: 3vh;
         width: 100%;
         right: 0;
         height: 100vh;
@@ -238,6 +241,11 @@ body, html{
         grid-column: 7 / span 5;
 
     }
+
+    .navbar-logo{
+        width: 40px;
+        height: auto;
+    }
 }
 
 @media (max-width: 900px){
@@ -259,7 +267,10 @@ body, html{
         grid-column: 7 / span 5;
 
     }
+
 }
+
+
 
 @media (max-width: 800px) {
     :root {
@@ -393,10 +404,6 @@ body, html{
         margin-bottom: 14px;
     }
 
-    .navbar-logo{
-        width: 100px;
-        height: auto;
-    }
 
     .span-4-start-3{
         grid-column: 1 / span 6;
